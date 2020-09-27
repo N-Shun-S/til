@@ -1,2 +1,4 @@
 # til
-Today I Learned
+*Today I Learned*  
+- 日々の学びを管理  
+※職場環境により紙ベースで行なっていたものも順次以降予定
