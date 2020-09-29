@@ -8,44 +8,44 @@
 1. GitHub上のリポジトリからローカルにcloneする  
 ```
 $git clone [URL]
-```
+```  
 
-1. 開発ブランチを作成  
+2. 開発ブランチを作成  
 ※個人開発では*develop*で統一  
 ```
 $git checkout -b develop
-```
+```  
   
-1. 開発  
+3. 開発  
 ```
 $git add .
 $git commit -m 'メッセージ(コミットメッセージのフォーマットに従う)'
-```
+```  
   
-1. ローカルからリモートへ
+4. ローカルからリモートへ
 ```
 $git pull origin master
 $git push origin develop
-```
+```  
   
-1. GitHub  
+5. GitHub  
 GitHub上でpull request   
-GitHub上でmerge  
+GitHub上でmerge    
   
-1. ローカルのmasterブランチを最新化
+6. ローカルのmasterブランチを最新化
 ```
 $git checkout master
 $git pull origin master
-```
+```  
   
-1. 不要になったローカルの開発ブランチ(develop)を削除する  
+7. 不要になったローカルの開発ブランチ(develop)を削除する  
 ```
 git branch --delete develop
 ```
 マージしたかにどうかに関わらず強制的に削除   
 ```
 git branch -D dev
-```
+```  
 
 # コミットメッセージのフォーマット
 [Prefix] チケット番号 要約  
