@@ -48,13 +48,13 @@ $git pull origin main
 7. 不要になったローカルの開発ブランチ(develop)を削除する
 
 ```
-git branch --delete develop
+$git branch --delete develop
 ```
 
 マージしたかにどうかに関わらず強制的に削除
 
 ```
-git branch -D dev
+$git branch -D dev
 ```
 
 8. その他
@@ -63,14 +63,49 @@ git branch -D dev
 ※HEAD→ 今いるブランチを指す
 
 ```
-git status
+$git status
 ```
 
 コミット履歴確認  
 ※q で終了
 
 ```
-git log
+$git log
+```
+
+コミットログの先頭７桁のコミット ID を表示する/コミットログを縦グラフで表示する
+
+```
+$git log --oneline
+$git log --graph
+```
+
+作業のキャンセル  
+Staging area に add した作業をキャンセル  
+※git status で確認できる
+
+```
+$git reset HEAD <filename>
+```
+
+Working directory での作業をキャンセル  
+※track 済みのファイルのみ可能/注意して行うこと
+
+```
+$git checkout --<filename>
+```
+
+ファイル名の変更を Git で管理
+
+```
+$git mv <filename1> <filename2>
+```
+
+or
+
+```
+mvコマンド <filename1> <filename2>
+$git add -A
 ```
 
 # コミットメッセージのフォーマット
