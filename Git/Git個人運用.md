@@ -66,7 +66,8 @@ git branch -D dev
 git status
 ```
 
-コミット履歴確認
+コミット履歴確認  
+※q で終了
 
 ```
 git log
