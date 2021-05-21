@@ -108,6 +108,22 @@ mvコマンド <filename1> <filename2>
 $git add -A
 ```
 
+マージについて  
+Fast Forward マージされるブランチの HEAD をマージするブランチの先端にそのまま移動
+Automatic merge 各コミットが異なる箇所を変更している場合  
+Conflict 各コミットが同じ箇所を変更している → 手動 or ツールで対処
+
+マージする前に差分（diff）を確認する
+※compare が新しい変更などした方
+
+```
+$git diff <base> <compare>
+```
+
+```
+$git merge <branchname>
+```
+
 # コミットメッセージのフォーマット
 
 [Prefix] チケット番号 要約  
