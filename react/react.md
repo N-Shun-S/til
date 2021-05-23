@@ -41,6 +41,21 @@ Reactではコンポーネントの実装は、関数または、クラスで定
 
 JSX...HTMLに見えて実はJavaScript→最終的にJavaScriptにコンパイルされる
 
+___  
+***メモ***<BR>
+gitignore作成参考<BR>
+[gitignore.io](https://www.toptal.com/developers/gitignore)<BR><BR>
+
+任意のディレクトリ配下(プロジェクトフォルダ配下)<BR>
+
+​```
+nodenv local <バージョン番号>
+​```
+
+バージョン管理に含める
+
+___
+
 <BR>
 <BR>
 
